@@ -29,12 +29,14 @@ print(total)
 #Função calculo expoente:
 print('-=-' * 15)
 print('Usando função para mostrar um valor elevado ao expoente digitado pelo usuario ')
-def potencia(x, expoente=2):
-    return x ** expoente
-x = int(input('Digite um valor: '))
-expoente = int(input('Digite um numero de potencia: '))
+def potencia():
+    xx = int(input('Digite um valor: '))
+    expoente = int(input('Digite um numero de potencia: '))
+    return xx ** expoente
 
-resultado = potencia(x, expoente)
+
+
+resultado = potencia()
 print(resultado)
 
 #Função para calculo de juros simples
@@ -69,6 +71,7 @@ def dados(nome, telefone, cpf):
     print(f'NOME: {nome}')
     print(f'TEL: {telefone}')
     print(f'CPF: {cpf}')
+    return dados
 
 def lista(*args):
     print('Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, '
@@ -76,7 +79,7 @@ def lista(*args):
           '\nmas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. '
           '\nFoi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, '
           '\ncom software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.')
-    return
+    return lista
 
 print('Cadastrando novos cliente:')
 nome = str(input('Digite seu nome: '))
