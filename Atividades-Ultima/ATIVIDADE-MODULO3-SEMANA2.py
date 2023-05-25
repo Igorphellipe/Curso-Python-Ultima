@@ -9,7 +9,4 @@ def decorator_imprimir(juros):
 def juros_s(capital, taxa, tempo):
     return print(f'Resultado juros: {capital * (taxa / 100) * tempo:.2f}' )
 
-capital = float(input('Digite o valor do emprestimo: '))
-taxa = float(input('Digite o valor da taxa de juros: '))
-tempo = int(input('Digite a quantidade de meses para pagamento: '))
-juros_s(capital, taxa, tempo)
+juros_s(1200, 4, 6)
