@@ -34,7 +34,7 @@ cursor.execute(sql)
 conexao.commit()
 print('TABELA CRIADA COM SUCESSO!')
 
-'''
+
 #laço para colocar dados na tabela categorias
 for i in range(3):
       #Iteração com o usuário
@@ -67,7 +67,7 @@ for i in range(4):
 
       #Comando para salvar alterações no banco
       conexao.commit()
-      print('DADOS SALVOS COM SUCESSO!')'''
+      print('DADOS SALVOS COM SUCESSO!')
 
 #Usando comado Select para vizualizar dados das Tabelas Categoria e Produto
 sql = 'SELECT * FROM categoria'
